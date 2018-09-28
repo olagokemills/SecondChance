@@ -1,0 +1,94 @@
+    <!-- Page Title-->
+    <div class="page-title">
+      <div class="container">
+        <h1>Registration</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container">
+          <!-- Open Ticket Modal-->
+    <p class="text-success mb-4" ng-bind="accounts.succMsg"></p>
+    <form method="POST" ng-submit="accounts.register()">
+        <div class="">
+          <div class="">
+            <div class="">
+              <h4 class="">REGISTER</h4>
+             </div>
+            <p class="text-muted text-sm">Fill the form below to Join in</p>
+              <div class="row">
+                <div class="col-sm-6">
+                   <div class="form-group">
+                <label for="First Name">First Name</label>
+                <input class="form-control" ng-model="accounts.fname" type="text" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                 <label for="Last Name">Last Name</label>
+                 <input class="form-control" ng-model="accounts.lname" type="text" required>
+               </div>
+            </div>
+            <div class="col-sm-6">
+                    <div class="form-group">
+                 <label for="Username">Userame</label>
+                 <input class="form-control" ng-model="accounts.username" type="text" required>
+               </div>
+             </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                <label for="Email">Email</label>
+                <input class="form-control" ng-model="accounts.email" type="email" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                    <div class="form-group">
+                 <label for="Password">Password</label>
+                 <input class="form-control" ng-model="accounts.pass" type="password" required>
+               </div>
+             </div>
+             <div class="col-sm-6">
+                    <div class="form-group">
+                 <label for="Confirm Password">Confirm Password</label>
+                 <input class="form-control" ng-model="accounts.pass" type="password" required>
+               </div>
+             </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="ticket-priority">City</label>
+                    <select class="form-control" ng-model="accounts.city" id="ticket-priority">
+                      <option>Please Select your city</option>
+                      <option>Lagos</option>
+                      <option>Abeokuta</option>
+                      <option>Ibadan</option>
+                      <option>Abuja</option>
+                    </select>
+                  </div>
+                </div>
+            <div class="col-sm-6">
+                    <div class="form-group">
+                     <label for="Phone Number">Phone</label>
+                     <input class="form-control" ng-model="accounts.phone" type="text" required>
+                   </div>
+                 </div>
+            <div class="col-sm-8">
+                    <div class="form-group">
+                <label for="ticket-description">Address</label>
+                <textarea class="form-control" ng-model="accounts.address" id="ticket-description" rows="8" required></textarea>
+              </div>
+            </div>
+            <div class="col-sm-8">
+                 <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" id="ex-check-1">
+                    <label class="custom-control-label" for="ex-check-1">I have read and agreed to the terms
+                        and conditions of your website
+                    </label>
+                </div>
+            </div>
+        </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+          </div>
+        </div>
+      </form>
+      <hr>
+    </div>
+  

@@ -1,0 +1,82 @@
+
+    <div class="page-title">  <br />
+      <br />
+      <br />
+      <br />
+      <div class="container">
+        <h1>Feedback</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a>
+          </li>
+          <li class="separator">&nbsp;/&nbsp;</li>
+          <li>Feedback</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container">
+          <!-- Open Ticket Modal-->
+    <form  method="POST" ng-submit="main.feedBack()" >
+        <div class="">
+          <div class="">
+            <div class="">
+              <h4 class="">Submit Feedback</h4>
+              
+            </div>
+            <div class="">
+              <p class="text-muted text-sm">Kindly fill the form below, it means a lot to us</p>
+              <div class="row">
+                <div class="col-sm-6">
+                   <div class="form-group">
+                <label for="full name">Full Name</label>
+                <input class="form-control" type="text" required>
+              </div>
+            </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                <label for="Email">Email</label>
+                <input class="form-control" type="email" required>
+              </div>
+            </div>
+             <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="ticket-type">Service</label>
+                    <select class="form-control" id="ticket-type">
+                      <option>Choose Service</option>
+                      <option>Massage</option>
+                      <option>Pedicure</option>
+                      <option>Complaint</option>
+                      <option>Info inquiry</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="ticket-priority">Rating</label>
+                    <select class="form-control" id="ticket-priority">
+                      <option>How would you rate your experience?</option>
+                      <option>Excellent</option>
+                      <option>Good</option>
+                      <option>Fair</option>
+                      <option>Poor</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="ticket-description">Description</label>
+                <textarea class="form-control" id="ticket-description" rows="8" required></textarea>
+              </div>
+              <div class="custom-file mb-3">
+                <input class="custom-file-input" type="file" id="file-input">
+                <label class="custom-file-label" for="file-input">Choose file...</label>
+              </div>
+            </div>
+            <div class="">
+              <button class="btn btn-primary" type="submit">Submit Feedback</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr>
+    </div>

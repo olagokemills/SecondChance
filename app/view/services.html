@@ -1,0 +1,43 @@
+
+    <!-- Page Title-->
+    <div class="page-title">
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="container">
+        <h1>Services</h1>
+        <ul class="breadcrumbs">
+          <li><a href="{{baseurl}}">Home</a>
+          </li>
+          <li class="separator">&nbsp;/&nbsp;</li>
+          <li>Services</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container">
+                <div ng-if="list.data == 'No content'">
+                    <h2>No Content to Display</h2>
+                </div>
+            <div class="row" ng-if="service.data !== 'No Content'">
+                    <div class="col-sm-6" ng-if="index < 20" ng-repeat="(index, x) in service.data">
+                      <div class="gallery-item"><a href="{{baseurl}}Services/{{x.servicetype}}" data-size="1000x667"><img src="img/gallery/th01.jpg" alt="Image"></a>
+                        <span class="caption"><a href="{{baseurl}}Services/{{x.servicetype}}"><!-- {{X.SERVICE}}-!-->Massage parlors</a></span></div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="gallery-item"><a href="img/gallery/01.jpg" data-size="1000x667"><img src="img/gallery/th01.jpg" alt="Image"></a>
+                        <span class="caption"><a href="#">Clothiers</a></span></div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="gallery-item"><a href="img/gallery/04.jpg" data-size="1000x667"><img src="img/gallery/th04.jpg" alt="Image"></a>
+                        <span class="caption"><a href="#">Manicure and Pedicure</a></span></div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="gallery-item"><a href="img/gallery/06.jpg" data-size="1000x667"><img src="img/gallery/th06.jpg" alt="Image"></a>
+                        <span class="caption"><a href="#">Makeup Artists</a></span></div>
+                    </div>
+            </div>
+      <hr>
+    </div>
+  

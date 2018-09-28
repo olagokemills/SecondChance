@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngApp">
+<head>
+    <meta charset="utf-8">
+    <base href="http://localhost:9090/projects/SecondChance/Frontend/">
+    <title>Unishop | Universal E-Commerce Template
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Unishop - Universal E-Commerce Template">
+    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Rokaux">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar navbar-sticky">
+      <!-- Site Branding-->
+      <div class="site-branding"><a class="site-logo hidden-xs-down" href="index.html"><img src="img/logo/logo.png" alt="Unishop"></a><a class="site-logo logo-sm hidden-sm-up" href="index.html"><img src="img/logo/logo-sm.png" alt="Unishop"></a>
+        
+      </div>
+      <!-- Main Navigation-->
+      <nav class="site-menu">
+        <ul>
+          <li class="active"><a href="index.html"><span>Home</span></a> </li>
+          <li><a href="shop.html"><span>Shop</span></a></li>
+          <li><a href="#"><span> About Us</span></a></li>
+          <li><a href="account-orders.html"><span>Account</span></a></li>
+          <li><a href="#"><span>Feedback</span></a></li>  
+          <li><a href="contacts.html"><span>Contacts</span></a></li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner"><a class="toolbar-toggle mobile-menu-toggle" href="#mobileMenu"><i class="material-icons menu"></i></a><a class="toolbar-toggle search-toggle" href="#search"><i class="material-icons search"></i></a><a class="toolbar-toggle" href="#account"><i class="material-icons person"></i></a><a class="toolbar-toggle" href="#cart"><i><span class="material-icons shopping_basket"></span><span class="count">3</span></i></a></div>
+        <!-- Toolbar Dropdown-->
+        <div class="toolbar-dropdown">
+          <!-- Mobile Menu Section-->
+          <div class="toolbar-section" id="mobileMenu">
+            <!-- Search Box-->
+            <form class="input-group form-group" method="get"><span class="input-group-btn">
+                <button type="submit"><i class="material-icons search"></i></button></span>
+              <input class="form-control" type="search" placeholder="Search website">
+            </form>
+            <!-- Slideable (Mobile) Menu-->
+            <nav class="slideable-menu mt-4">
+              <ul class="menu">
+                <li class="has-children active"><span><a href="index.html"><span>Home</span></a><span class="sub-menu-toggle"></span></span>
+                    </li>
+                <li class="has-children"><span><a href=""><span>Shop</span></a><span class="sub-menu-toggle"></span></span>
+                   </li>
+                <li class="has-children"><span><a href=""><span>Account</span></a><span class="sub-menu-toggle"></span></span>
+                </li>
+                <li class="has-children"><span><a href="#">Feedback</a><span class="sub-menu-toggle"></span></span>
+                </li>
+                <li class="has-children"><span><a href="#">Contacts</a><span class="sub-menu-toggle"></span></span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Search Section-->
+          <div class="toolbar-section" id="search">
+            <form class="search-form mb-2" method="get">
+              <input type="search" placeholder="Type search query"><i class="material-icons search"></i>
+            </form>
+            <!-- Products-->
+            <div class="widget widget-featured-products">
+              <h3 class="widget-title">Found in Products</h3>
+              <!-- Entry-->
+              <div class="entry">
+                <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/01.png" alt="Product"></a></div>
+                <div class="entry-content">
+                  <h4 class="entry-title"><a href="shop-single.html">Max <span class='text-highlighted'>Task Chair</span></a></h4><span class="entry-meta">$299.00</span>
+                </div>
+              </div>
+              <!-- Entry-->
+              <div class="entry">
+                <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/02.png" alt="Product"></a></div>
+                <div class="entry-content">
+                  <h4 class="entry-title"><a href="shop-single.html"><span class='text-highlighted'>Drawer</span> File Cabinet</a></h4><span class="entry-meta">$265.00</span>
+                </div>
+              </div>
+              <!-- Entry-->
+              <div class="entry">
+                <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/03.png" alt="Product"></a></div>
+                <div class="entry-content">
+                  <h4 class="entry-title"><a href="shop-single.html">Campfire <span class='text-highlighted'>Paper</span> Table</a></h4><span class="entry-meta">$570.00</span>
+                </div>
+              </div>
+            </div>
+            <!-- Blog-->
+            <div class="widget widget-featured-products">
+              <h3 class="widget-title">Found in Blog</h3>
+              <!-- Entry-->
+              <div class="entry">
+                <div class="entry-thumb"><a href="blog-single.html"><img src="img/blog/widget/01.jpg" alt="Post"></a></div>
+                <div class="entry-content">
+                  <h4 class="entry-title"><a href="blog-single.html"><span class='text-highlighted'>Modern</span> Working Space</a></h4><span class="entry-meta">May 09</span>
+                </div>
+              </div>
+              <!-- Entry-->
+              <div class="entry">
+                <div class="entry-thumb"><a href="blog-single.html"><img src="img/blog/widget/02.jpg" alt="Post"></a></div>
+                <div class="entry-content">
+                  <h4 class="entry-title"><a href="blog-single.html">Interior <span class='text-highlighted'>Design</span> Tricks</a></h4><span class="entry-meta">April 18</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Account Section-->
+          <div class="toolbar-section" id="account">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#login" data-toggle="tab" role="tab">Log In</a></li>
+              <li class="nav-item"><a class="nav-link" href="#signup" data-toggle="tab" role="tab">Sign Up</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="login" role="tabpanel">
+                <form autocomplete="off" id="login-form">
+                  <div class="form-group input-group">
+                    <input class="form-control" type="email" placeholder="Email" required><span class="input-group-addon"><i class="material-icons mail"></i></span>
+                  </div>
+                  <div class="form-group input-group">
+                    <input class="form-control" type="password" placeholder="Password" required><span class="input-group-addon"><i class="material-icons lock"></i></span>
+                  </div>
+                  <div class="custom-control custom-checkbox form-group">
+                    <input class="custom-control-input" type="checkbox" id="logged" checked>
+                    <label class="custom-control-label" for="logged">Keep me logged in</label>
+                  </div>
+                  <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="signup" role="tabpanel">
+                <form autocomplete="off" id="signup-form">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Full Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Password" required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Confirm Password" required>
+                  </div>
+                  <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+                  <p class="text-muted text-sm mt-4">OR sign up with your social account</p><a class="media-btn media-facebook" href="#"><i class="socicon-facebook"></i><span>Signup with Facebook</span></a><a class="media-btn media-google" href="#"><i class="socicon-googleplus"></i><span>Signup with Google+</span></a><a class="media-btn media-twitter" href="#"><i class="socicon-twitter"></i><span>Signup with Twitter</span></a>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Shopping Cart Section-->
+          <div class="toolbar-section" id="cart">
+            <div class="table-responsive shopping-cart mb-0">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="2">
+                      <div class="d-flex justify-content-between align-items-center">Products<a class="navi-link text-uppercase" href="cart.html"><span class="text-xxs">Expand Cart</span><i class="material-icons keyboard_arrow_right"></i></a></div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">3-Drawer File Cabinet</a></h4><span><em>Price:</em> $257.00</span><span><em>Quantity:</em> 1</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center"><a class="remove-from-cart" href="#"><i class="material-icons icon_close"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/02.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">Plastic Tissue Holder</a></h4><span><em>Price:</em> $76.40</span><span><em>Quantity:</em> 2</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center"><a class="remove-from-cart" href="#"><i class="material-icons icon_close"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/03.jpg" alt="Product"></a>
+                        <div class="product-info">
+                          <h4 class="product-title"><a href="shop-single.html">Campfire Paper Table</a></h4><span><em>Price:</em> $289.00</span><span><em>Quantity:</em> 1</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="text-center"><a class="remove-from-cart" href="#"><i class="material-icons icon_close"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr class="mb-3">
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+              <div class="pr-2 py-1 text-sm">Subtotal: <span class='text-dark text-medium'>$622.40</span></div><a class="btn btn-sm btn-success mb-0 mr-0" href="checkout-address.html">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content-->
+    <!-- Featured Categories-->
+    <section class="container-fluid pt-30 padding-bottom-2x">
+      <div class="row">
+        <div class="col-md-6 mb-30"><a class="category-card flex-wrap" href="shop-boxed-ls.html">
+            <div class="category-card-info align-self-center">
+              <h3 class="category-card-title">Seating</h3>
+              <h4 class="category-card-subtitle">Starting from $269.00</h4>
+            </div>
+            <div class="category-card-thumb"><img src="img/shop/categories/03.jpg" alt="Category"></div></a></div>
+        <div class="col-md-6 mb-30"><a class="category-card flex-wrap" href="shop-boxed-ls.html">
+            <div class="category-card-info align-self-center">
+              <h3 class="category-card-title">Cabinets</h3>
+              <h4 class="category-card-subtitle">Starting from $220.00</h4>
+            </div>
+            <div class="category-card-thumb"><img src="img/shop/categories/04.jpg" alt="Category"></div></a></div>
+        <div class="col-md-6 mb-30"><a class="category-card flex-wrap" href="shop-boxed-ls.html">
+            <div class="category-card-info align-self-center">
+              <h3 class="category-card-title">Tables</h3>
+              <h4 class="category-card-subtitle">Starting from $198.00</h4>
+            </div>
+            <div class="category-card-thumb"><img src="img/shop/categories/05.jpg" alt="Category"></div></a></div>
+        <div class="col-md-6 mb-30"><a class="category-card flex-wrap" href="shop-boxed-ls.html">
+            <div class="category-card-info align-self-center">
+              <h3 class="category-card-title">Lighting</h3>
+              <h4 class="category-card-subtitle">Starting from $95.99</h4>
+            </div>
+            <div class="category-card-thumb"><img src="img/shop/categories/02.jpg" alt="Category"></div></a></div>
+      </div>
+    </section>
+    <!-- Featured Products-->
+    <section class="container padding-bottom-3x">
+      <h3 class="text-center mb-30">Featured Products</h3>
+      <div class="row">
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"> <span class="product-badge text-danger">Sale</span><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th01.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Storage Box</a></h3>
+              <h4 class="product-card-price">
+                <del>$49.00</del>$38.00
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th05.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Lounge Chair</a></h3>
+              <h4 class="product-card-price">$1420.00</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"><span class="product-rating text-warning"></span><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th16.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Navy Box Bench</a></h3>
+              <h4 class="product-card-price">$75.00</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"><span class="product-badge text-muted">Out of stock</span><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th06.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button><a class="btn btn-white btn-sm" hre="shop-single.html">View Details</a>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">LED Lighting</a></h3>
+              <h4 class="product-card-price">$130.00</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th09.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Campfire Table</a></h3>
+              <h4 class="product-card-price">$1087.00</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"><span class="product-rating text-warning"></span><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th08.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Tissue Holder</a></h3>
+              <h4 class="product-card-price">$76.40</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"> <span class="product-badge text-danger">Sale</span><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th10.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Pendant Lamp</a></h3>
+              <h4 class="product-card-price">
+                <del>$54.00</del>$27.00
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Item-->
+        <div class="col-xl-3 col-lg-4 col-sm-6">
+          <div class="product-card mb-30">
+            <div class="product-card-thumb"><a class="product-card-link" href="shop-single.html"></a><img src="img/shop/th13.jpg" alt="Product">
+              <div class="product-card-buttons">
+                <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                <button class="btn btn-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-card-details">
+              <h3 class="product-card-title"><a href="shop-single.html">Office Chair</a></h3>
+              <h4 class="product-card-price">$329.00</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center"><a class="btn btn-outline-secondary mb-0" href="shop.html">View All Products</a></div>
+    </section>
+    <!-- Special Offer-->
+    <section class="bg-faded padding-top-3x padding-bottom-2x px-4 text-center">
+      <h2>Special Offer&nbsp;<span class="text-danger">-50%</span></h2><a class="d-block mb-2" href="shop-single.html"><img src="img/shop/special-offer01.jpg" alt="Image"></a>
+      <h3 class="lead text-normal mb-3"><a class="navi-link" href="shop-single.html">Living Room Sofa Transformer</a></h3>
+      <del class="lead text-normal text-muted">$1900.00</del><span class="h4 text-normal text-danger">&nbsp;$950.00</span>
+      <div class="mt-4">
+        <div class="countdown countdown-alt" data-date-time="07/30/2018 12:00:00">
+          <div class="item">
+            <div class="days">00</div><span class="days_ref">Days</span>
+          </div>
+          <div class="item">
+            <div class="hours">00</div><span class="hours_ref">Hours</span>
+          </div>
+          <div class="item">
+            <div class="minutes">00</div><span class="minutes_ref">Mins</span>
+          </div>
+          <div class="item">
+            <div class="seconds">00</div><span class="seconds_ref">Secs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features-->
+    <section class="container padding-top-3x padding-bottom-3x">
+      <div class="row pt-2">
+        <div class="col-md-3 col-sm-6 text-center mb-30"><span class="d-block display-4 text-gray-light mb-4"><i class="material-icons flight"></i></span>
+          <h4 class="h6 mb-2">Free World Wide Shipping</h4>
+          <p class="text-sm text-muted mb-0">Free shipping on all orders over $999</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center mb-30"><span class="d-block display-4 text-gray-light mb-4"><i class="material-icons autorenew"></i></span>
+          <h4 class="h6 mb-2">Money Back Guarantee</h4>
+          <p class="text-sm text-muted mb-0">We return money within 30 days</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center mb-30"><span class="d-block display-4 text-gray-light mb-4"><i class="material-icons headset_mic"></i></span>
+          <h4 class="h6 mb-2">24/7 Online Support</h4>
+          <p class="text-sm text-muted mb-0">Friendly 24/7 customer support</p>
+        </div>
+        <div class="col-md-3 col-sm-6 text-center mb-30"><span class="d-block display-4 text-gray-light mb-4"><i class="material-icons credit_card"></i></span>
+          <h4 class="h6 mb-2">Secure Online Payments</h4>
+          <p class="text-sm text-muted mb-0">We posess SSL / Secure Certificate</p>
+        </div>
+      </div>
+    </section>
+    <!-- Site Footer-->
+    <footer class="site-footer">
+      <div class="column text-center">
+        <p class="text-sm mb-4">Need Support? Call<span class="text-primary">&nbsp;001 (917) 555-4836</span></p><a class="social-button sb-skype" href="#" data-toggle="tooltip" data-placement="top" title="Skype"><i class="socicon-skype"></i></a><a class="social-button sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i></a><a class="social-button sb-google-plus" href="#" data-toggle="tooltip" data-placement="top" title="Google +"><i class="socicon-googleplus"></i></a><a class="social-button sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram" href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="socicon-instagram"></i></a>
+        <p class="text-xxs text-muted mb-0 mt-3">© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by rokaux</p>
+      </div>
+      <div class="column">
+        <h3 class="widget-title text-center">Subscription<small>To receive latest offers and discounts from the shop.</small></h3>
+        <form class="subscribe-form input-group" action="http://rokaux.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;id=1194bb7544" method="post" target="_blank" novalidate><span class="input-group-btn">
+            <button type="submit"><i class="material-icons send"></i></button></span>
+          <input class="form-control" type="email" name="EMAIL" placeholder="Your e-mail">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1" value>
+          </div>
+        </form>
+      </div>
+      <div class="column">
+        <h3 class="widget-title text-center">Payment Methods<small>We support one of the following payment methods.</small></h3>
+        <div class="footer-cards"><img src="img/cards.png" alt="Payment Methods">
+        </div>
+      </div>
+    </footer>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="material-icons trending_flat"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+
+        <!-- angular libraries -->
+        <script src="libs/angular.js" type="text/javascript"></script>
+        <script src="libs/angular-ui-router.js" type="text/javascript"></script>
+        <script src="libs/angular-sanitize.js" type="text/javascript"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <!-- Customizer scripts-->
+  </body>
+</html>

@@ -1,0 +1,38 @@
+    <div class="row no-gutters">
+      <div class="col-md-6 fh-section" style="background-image: url(img/coming-soon-bg.jpg);"><span class="overlay" style="background-color: #000; opacity: .68;"></span>
+        <div class="d-flex flex-column fh-section py-5 px-3 justify-content-between">
+          <div class="w-100 text-center">
+            <div class="d-inline-block pt-2 mb-5" style="width: 140px;"><a href="{{baseurl}}"><img class="d-block" src="img/logo/logo.png" alt="Pamper"></a></div>
+            <h1 class="text-white mb-4">Welcome</h1>
+            <p class="text-white text-normal opacity-80 mb-4">Access Services on the go</p>
+            <div class="pt-3 hidden-md-up"></div>
+          </div>
+          <div class="w-100 text-center">
+            <p class="text-sm text-white mb-2">00 33 169 7720</p><a class="navi-link-light text-sm" href="mailto:support@unishop.com">support@almondcareers.com</a>
+            <div class="pt-3"><a class="social-button shape-rounded sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-rounded sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-rounded sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-rounded sb-google-plus sb-light-skin" href="#"><i class="socicon-googleplus"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 fh-section" id="notify" data-offset-top="-1">
+        <div class="d-flex flex-column fh-section py-5 px-3 justify-content-center align-items-center">
+          <div class="text-center" style="max-width: 500px;">
+            <div class="h1 mb-4">Login</div>
+            <p class="text-muted mb-4">Enter your details below to gain full access</p>
+            <p class="text-danger mb-4" ng-bind="accounts.errMsg"></p><p class="text-success mb-4" ng-bind="accounts.succMsg"></p>
+            <form method="POST" ng-submit="accounts.login()">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Username" ng-model="accounts.username" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="password" placeholder="Password" ng-model="accounts.password" required>
+              </div>
+              <div class="form-group float-left">
+                  <a href="#">Forgot Password? </a>
+              </div> 
+              <button class="btn btn-primary float-right" type="submit"><i class="icon-mail"></i>&nbsp;Login</button>
+            </form>
+           
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,28 @@
+ <div class="container">
+
+                <div ng-if="list.data == 'No content'">
+                    <h2>No Content to Display</h2>
+                </div>
+
+            <div class="row" ng-if="service.data !== 'No Content'">
+                    <div class="col-sm-4 margin-bottom-2x pb-2">
+                            <hr class="margin-bottom-1x">
+                          <div class="card"><img class="card-img-top" src="{{x.serviceimage}}" alt="Card image">
+                            <div class="card-body row">
+                              <h4 class="card-title"><a href="{{baseurl}}Services/{{x.servicecategory}}/{{x.servicedetail}}">{{x.servicename}}</a></h4>
+                              <p class="card-text">{{x.servicedescription}}</p>
+                                <div class="col-9">
+                                  {{x.servicelocation}}
+                                </div><div class="col-3">
+                                       <small>{{x.serviceprice}} /hr</small></a>
+                                    </div>
+                             </div>
+                            <div class="card-footer"> <a class="btn btn-primary btn-sm" href="{{baseurl}}Services/{{x.servicecategory}}/{{x.servicedetails}}/{{x.serviceorder}}">Book now</a>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+
+      <hr>
+  </div>
+  </div>
